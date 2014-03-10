@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	version="1.0">
+	<persistence-unit transaction-type="JTA" name="pilCommon">
+		<jta-data-source>pInit</jta-data-source>
+		<class>com.pubint.projInit.entity.Project</class>
+		<properties>
+			<property name="openjpa.jdbc.DBDictionary" value="mysql" />
+			<property name="openjpa.AutoDetach" value="close" />
+			<property name="openjpa.DetachState" value="fetch-groups(AccessUnloaded=true)" />
+			<property name="openjpa.Multithreaded" value="true" />
+			<property name="openjpa.TransactionMode" value="managed" />
+			<property name="openjpa.NontransactionalRead" value="true" />
+			<property name="openjpa.RestoreState" value="all" />
+			<property name="openjpa.jdbc.SynchronizeMappings" value="false" />
+			<property name="openjpa.InverseManager" value="true" />
+		</properties>
+	</persistence-unit>
+	<persistence-unit transaction-type="JTA" name="kitchenSync">
+		<jta-data-source>ks</jta-data-source>
+		<class>com.pubint.projInit.ksEntity.KsProject</class>
+		<properties>
+			<property name="openjpa.jdbc.DBDictionary" value="mysql" />
+			<property name="openjpa.AutoDetach" value="close" />
+			<property name="openjpa.DetachState" value="fetch-groups(AccessUnloaded=true)" />
+			<property name="openjpa.Multithreaded" value="true" />
+			<property name="openjpa.TransactionMode" value="managed" />
+			<property name="openjpa.NontransactionalRead" value="true" />
+			<property name="openjpa.RestoreState" value="all" />
+			<property name="openjpa.jdbc.SynchronizeMappings" value="false" />
+			<property name="openjpa.InverseManager" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
+

@@ -1,0 +1,21 @@
+{
+  "name": "projectInit",
+  "version": "0.0.0",
+  "authors": [
+    "Jay D. McHugh <jaydmchugh@gmail.com>"
+  ],
+  "description": "Project Initiation Management",
+  "license": "Apache 2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "WebContent/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.scss": "~2.2.0+normalize.2.1.3"
+  }
+}

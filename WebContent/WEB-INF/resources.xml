@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<Resource id="pInit" type="DataSource">
+		ignoreDefaultValues true
+		JdbcDriver com.mysql.jdbc.Driver
+		JdbcUrl jdbc:mysql://ksdb:3306/projectInit
+		UserName pilCommon
+		Password pilCommon
+		defaultAutoCommit true
+		jtaManaged true
+	</Resource>
+	<Resource id="ks" type="DataSource">
+		ignoreDefaultValues true
+		JdbcDriver com.mysql.jdbc.Driver
+		JdbcUrl jdbc:mysql://ksdb:3306/KitchenSync
+		UserName pilCommon
+		Password pilCommon
+		defaultAutoCommit true
+		jtaManaged true
+	</Resource>
+</resources>
